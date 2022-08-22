@@ -49,10 +49,37 @@
 @layer components {
 
     .menu-item{
-        @apply mx-5 tracking-wider flex-none
+        @apply mx-5 tracking-wider flex-none xs:flex-1
     }
 
     .menu-item-a{
         @apply block transition duration-200 hover:text-azul-claro transform hover:scale-125;
+    }
+
+    .text-banner {
+        @apply bebas;
+        text-shadow: 2px 2px 1px black;
+    }
+
+    #cards {
+        @apply flex flex-nowrap justify-between;
+    }
+
+    .card {
+        @apply group flex-1 h-80 border-2 border-gray-200 shadow-md bg-white overflow-hidden m-5 mt-10 pl-5 pr-5 cursor-pointer transition duration-300 hover:bg-black;
+    }
+
+    .card-icon {
+        font-family: "WebSymbolsRegular";
+        @apply block w-full h-32 text-5xl text-center mt-12 mx-auto transition duration-300;
+    }
+
+    .card-category {
+        @apply w-full h-12 text-xl font-bold text-center text-azul-oscuro transition duration-300;
+    }
+
+    .card-description {
+        font-family: "TrebuchetMS";
+        @apply text-center text-azul-oscuro text-base transition duration-300;
     }
 }

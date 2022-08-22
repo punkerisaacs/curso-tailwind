@@ -7,23 +7,86 @@
 </head>
 <body class="bg-body-pattern bg-scroll">
 
-    <header class="bg-black text-white h-20 bebas">
-        <div class="container w-11/12 mx-auto flex flex-row">
-            <div id="logo" class="flex-1">
-                <div class="group w-64 pt-0.5 pb-0.6 mt-4 ml-5 text-center tracking-wider cursor-pointer overflow-hidden transition duration-300 rounded-sm bg-azul-claro hover:bg-gray-200 hover:text-black">
-                    <span class="symbol block float-left text-3xl mt-1 ml-11 animate-spin-slow group-hover:animate-none">S</span>
-                    <h3 class="block float-right text-4xl mt-1.5 mr-16 transition duration-100">Tailwind</h3>
-                </div>
+<header class="bg-black text-white h-20 bebas xs:h-36">
+    <div class="container w-11/12 mx-auto flex flex-row xs:flex-col">
+        <div id="logo" class="flex-1 xs:mx-auto">
+            <div class="group w-64 pt-0.5 pb-0.6 mt-4 ml-5 text-center tracking-wider cursor-pointer overflow-hidden transition duration-300 rounded-sm bg-azul-claro hover:bg-gray-200 hover:text-black">
+                <span class="symbol block float-left text-3xl mt-1 ml-11 animate-spin-slow group-hover:animate-none">S</span>
+                <h3 class="block float-right text-4xl mt-1.5 mr-16 transition duration-100">Tailwind</h3>
             </div>
-            <nav class="flex-1">
-                <ul class="flex mr-6 flex-row h-20 items-center justify-end text-2xl text-center">
-                    <li class="menu-item"><a href="#" class="menu-item-a">inicio</a></li>
-                    <li class="menu-item"><a href="#" class="menu-item-a">blog</a></li>
-                    <li class="menu-item"><a href="#" class="menu-item-a">formación</a></li>
-                    <li class="menu-item"><a href="#" class="menu-item-a">Contacto</a></li>
-                </ul>
-            </nav>
         </div>
-    </header>
+        <nav class="flex-1">
+            <ul class="flex mr-6 flex-row h-20 items-center md:justify-end text-2xl text-center xs:mr-0 xs:text-center">
+                <li class="menu-item"><a href="#" class="menu-item-a">inicio</a></li>
+                <li class="menu-item"><a href="#" class="menu-item-a">blog</a></li>
+                <li class="menu-item"><a href="#" class="menu-item-a">formación</a></li>
+                <li class="menu-item"><a href="#" class="menu-item-a">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="container w-11/12 mx-auto">
+    <div id="banner"
+         class="w-full h-28 mx-auto border-8 border-white overflow-hidden shadow m-5 bg-banner bg-banner-position animate-bg-banner">
+        <h1 class="text-banner block text-white text-5xl font-normal tracking-wider m-7 mx-auto text-center animate-text-banner xs:text-2xl xs:mt-7 xs:mt-8">
+            Cursos de
+            desarrollo web con punkerIsaacs</h1>
+    </div>
+
+    <div id="cards">
+        <div class="card">
+            <span class="card-icon group-hover:text-7xl group-hover:text-azul-claro">h</span>
+            <h2 class="card-category group-hover:text-white">
+                Desarrollo web
+            </h2>
+            <p class="card-description group-hover:text-white">
+                Aprende los principales lenjuajes de desarollo
+            </p>
+        </div>
+
+        <div class="card">
+            <span class="card-icon group-hover:text-7xl group-hover:text-azul-claro">_</span>
+            <h2 class="card-category group-hover:text-white">
+               Sistemas operativos
+            </h2>
+            <p class="card-description group-hover:text-white">
+                Aprende a administrar sistemas operativos
+            </p>
+        </div>
+
+        <div class="card">
+            <span class="card-icon group-hover:text-7xl group-hover:text-azul-claro">S</span>
+            <h2 class="card-category group-hover:text-white">
+                Hardware
+            </h2>
+            <p class="card-description group-hover:text-white">
+                Conoce todo acerca del hardware
+            </p>
+        </div>
+
+        <div class="card">
+            <span class="card-icon group-hover:text-7xl group-hover:text-azul-claro">u</span>
+            <h2 class="card-category group-hover:text-white">
+                Redes e internet
+            </h2>
+            <p class="card-description group-hover:text-white">
+                Administra y configura redes y servidores
+            </p>
+        </div>
+
+        <div class="card">
+            <span class="card-icon group-hover:text-7xl group-hover:text-azul-claro">a</span>
+            <h2 class="card-category group-hover:text-white">
+                Bases de datos
+            </h2>
+            <p class="card-description group-hover:text-white">
+                Aprende a trabajar bases de datos
+            </p>
+        </div>
+
+    </div>
+
+</section>
 </body>
 </html>
