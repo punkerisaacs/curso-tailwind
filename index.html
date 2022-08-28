@@ -36,57 +36,189 @@
 
     <div id="cards">
         <div class="card">
-            <span class="card-icon group-hover:text-7xl group-hover:text-azul-claro">h</span>
-            <h2 class="card-category group-hover:text-white">
+            <span class="card-icon group-hover:text-azul-claro transform group-hover:scale-125 group-hover:animate-show-card-icon">H</span>
+            <h2 class="card-category group-hover:text-white  group-hover:animate-show-card-category">
                 Desarrollo web
             </h2>
-            <p class="card-description group-hover:text-white">
+            <p class="card-description group-hover:text-white group-hover:animate-show-card-description">
                 Aprende los principales lenjuajes de desarollo
             </p>
         </div>
 
         <div class="card">
-            <span class="card-icon group-hover:text-7xl group-hover:text-azul-claro">_</span>
-            <h2 class="card-category group-hover:text-white">
+            <span class="card-icon group-hover:text-azul-claro transform group-hover:scale-125 group-hover:animate-show-card-icon">_</span>
+            <h2 class="card-category group-hover:text-white  group-hover:animate-show-card-category">
                Sistemas operativos
             </h2>
-            <p class="card-description group-hover:text-white">
+            <p class="card-description group-hover:text-white group-hover:animate-show-card-description">
                 Aprende a administrar sistemas operativos
             </p>
         </div>
 
         <div class="card">
-            <span class="card-icon group-hover:text-7xl group-hover:text-azul-claro">S</span>
-            <h2 class="card-category group-hover:text-white">
+            <span class="card-icon group-hover:text-azul-claro transform group-hover:scale-125 group-hover:animate-show-card-icon">S</span>
+            <h2 class="card-category group-hover:text-white  group-hover:animate-show-card-category">
                 Hardware
             </h2>
-            <p class="card-description group-hover:text-white">
+            <p class="card-description group-hover:text-white group-hover:animate-show-card-description">
                 Conoce todo acerca del hardware
             </p>
         </div>
 
         <div class="card">
-            <span class="card-icon group-hover:text-7xl group-hover:text-azul-claro">u</span>
-            <h2 class="card-category group-hover:text-white">
+            <span class="card-icon group-hover:text-azul-claro transform group-hover:scale-125 group-hover:animate-show-card-icon">u</span>
+            <h2 class="card-category group-hover:text-white group-hover:animate-show-card-category">
                 Redes e internet
             </h2>
-            <p class="card-description group-hover:text-white">
+            <p class="card-description group-hover:text-white group-hover:animate-show-card-description">
                 Administra y configura redes y servidores
             </p>
         </div>
 
         <div class="card">
-            <span class="card-icon group-hover:text-7xl group-hover:text-azul-claro">a</span>
-            <h2 class="card-category group-hover:text-white">
+            <span class="card-icon group-hover:text-azul-claro transform group-hover:scale-125 group-hover:animate-show-card-icon">a</span>
+            <h2 class="card-category group-hover:text-white  group-hover:animate-show-card-category">
                 Bases de datos
             </h2>
-            <p class="card-description group-hover:text-white">
+            <p class="card-description group-hover:text-white group-hover:animate-show-card-description">
                 Aprende a trabajar bases de datos
             </p>
         </div>
-
     </div>
-
 </section>
+
+<main class="container w-11/12 mx-auto flex flex-row mt-5 xs:flex-col md:flex-row">
+    <aside id="lateral" class="order-2 flex-none w-72 min-h-full xs:w-full xs:m-0">
+        <h3 class="aside-header">BUSCAR</h3>
+        <div id="buscar" class="w-111/12 h-7 m-2.5 mx-auto bg-white border border-gray-200 rounded shadow-inner">
+            <form action="">
+                <input type="text" class="w-10/12 h-6 boder-none pl-1.5 rounded-md bg-transparent text-gray-500 transition duration-300 outline-none focus: outline-none"/>
+                <input type="button"  value="L" class="symbol h-6 cursor-pointer text-base bg-transparent border-none text-gray-500 pl-3">
+            </form>
+        </div>
+        <h3 class="aside-header">LOGIN</h3>
+        <div id="login" class="aside-box">
+            <form action="">
+                <label for="email" class="login-icon">U</label>
+                <input type="email"  id="email" class="login-input"/>
+                <label for="password" class="login-icon text-xl ml-7 mt-6">w</label>
+                <input type="password" id="password" class="login-input"/>
+
+                <input type="submit"  value="Entrar" class="login-button">
+                <input type="reset"  value="Limpiar" class="login-button ml-1">
+
+                <a href="#" class="login-link">Registrate aquí</a>
+                <a href="#" class="login-link">¿Has olvidado tu contraeña?</a>
+            </form>
+        </div>
+        <h3 class="aside-header">REDES SOCIALES</h3>
+        <div id="social-media" class="aside-box h-48">
+            <div class="group twitter">
+                <a href="#" class="social-icon">t</a>
+                <p class="social-overlay">Twitter</p>
+            </div>
+            <div class="group facebook">
+                <a href="#"  class="social-icon">f</a>
+                <p class="social-overlay">Facebook</p>
+            </div>
+            <div class="group youtube">
+                <a href="#"  class="social-icon">y</a>
+                <p class="social-overlay">Youtube</p>
+            </div>
+        </div>
+
+        <h3 class="aside-header">PATROCINADORES</h3>
+        <div id="sponsors" class="aside-box">
+        </div>
+    </aside>
+
+    <section class="order-1 flex-grow mr-10 xs:w-full xs:mr-0">
+        <h2 class="articles-header">últimos articulos</h2>
+        <article class="article-item">
+            <div class="article-data">
+                <span >Fecha:10 marzo</span>
+                <span >Categoría: Pruebas</span>
+            </div>
+            <h4 class="article-head">
+                <a href="#">Titulo del artículo</a>
+            </h4>
+            <p class="article-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci at corporis dolore, dolorum eum eveniet ex excepturi expedita facilis inventore itaque laboriosam natus nesciunt non provident repudiandae suscipit vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+        </article>
+
+        <article class="article-item">
+            <div class="article-data">
+                <span >Fecha:10 marzo</span>
+                <span >Categoría: Pruebas</span>
+            </div>
+            <h4 class="article-head">
+                <a href="#">Titulo del artículo</a>
+            </h4>
+            <p class="article-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci at corporis dolore, dolorum eum eveniet ex excepturi expedita facilis inventore itaque laboriosam natus nesciunt non provident repudiandae suscipit vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+        </article>
+
+        <article class="article-item">
+            <div class="article-data">
+                <span >Fecha:10 marzo</span>
+                <span >Categoría: Pruebas</span>
+            </div>
+            <h4 class="article-head">
+                <a href="#">Titulo del artículo</a>
+            </h4>
+            <p class="article-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci at corporis dolore, dolorum eum eveniet ex excepturi expedita facilis inventore itaque laboriosam natus nesciunt non provident repudiandae suscipit vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+        </article>
+
+        <article class="article-item">
+            <div class="article-data">
+                <span >Fecha:10 marzo</span>
+                <span >Categoría: Pruebas</span>
+            </div>
+            <h4 class="article-head">
+                <a href="#">Titulo del artículo</a>
+            </h4>
+            <p class="article-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci at corporis dolore, dolorum eum eveniet ex excepturi expedita facilis inventore itaque laboriosam natus nesciunt non provident repudiandae suscipit vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+        </article>
+    </section>
+</main>
+
+<footer id="footer" class="w-full h-auto bg-black text-white overflow-x-hidden">
+    <div class="container mx-auto flex flex-row w-11/12 xs:flex-col md:flex-col lg:flex-row">
+        <div id="footer-menu" class="footer-box mt-10">
+            <h5 class="footer-header">MENU</h5>
+            <ul class="footer-menu">
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">FORMACIÓN</a></li>
+                <li><a href="#">CONTACTO</a></li>
+            </ul>
+        </div>
+        <div id="location" class="footer-box">
+            <h5 class="footer-header">¿DONDE ESTAMOS?</h5>
+            <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59946.58181364666!2d-98.76602883368368!3d20.10643789041636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d109757c511f1b%3A0x824461b0a2fd3961!2sObra%20Pachuca!5e0!3m2!1ses-419!2smx!4v1661652276345!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="w-full h-80 mt-3 border-4 border-gray-400 rounded-md shadow-md"></iframe>
+        </div>
+
+        <div id="info" class="footer-box">
+            <h5 class="footer-header">Desarrollado con</h5>
+            <p class="mb-6"><img class="mx-auto" src="img/html5-badge-h-css3-graphics-multimedia-performance-semantics.png" alt=""></p>
+            <h5 class="footer-header">Optimizado para</h5>
+            <div class="browsers flex flex-row space-x-5 mb-5">
+                <a href="#"><img src="img/firefox-icon.png" alt=""> </a>
+                <a href="#"><img src="img/chrome.png" alt=""></a>
+                <a href="#"><img src="img/Opera_256x256.png" alt=""></a>
+                <a href="#"><img src="img/safari.png" alt=""></a>
+                <a href="#"><img src="img/android.png" alt=""></a>
+                <a href="#"><img src="img/ios.png" alt=""></a>
+           </div>
+            <h5 class="footer-header">AUTOR</h5>
+            <p>&copy; Punker Isaacs - punkerisaacs49@gmail.com</p>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
